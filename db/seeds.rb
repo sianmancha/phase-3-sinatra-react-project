@@ -6,11 +6,11 @@ Student.destroy_all
 Assignment.destroy_all
 
 puts 'Creating Assignments...'
-math = Assignment.create(name: "Dividing Fractions", due_date: "11/15/2021")
-science = Assignment.create(name: "Gene Expression", due_date: "12/03/2021")
-social_studies = Assignment.create(name: "Checks and Balances", due_date: "10/04/2021")
-history = Assignment.create(name: "French Revolution", due_date: "10/24/2021")
-ela = Assignment.create(name: "Book Report: 'To Kill A Mockingbird'", due_date: "11/26/2021")
+math = Assignment.create(assignment_name: "Dividing Fractions", due_date: "11/15/2021")
+science = Assignment.create(assignment_name: "Gene Expression", due_date: "12/03/2021")
+social_studies = Assignment.create(assignment_name: "Checks and Balances", due_date: "10/04/2021")
+history = Assignment.create(assignment_name: "French Revolution", due_date: "10/24/2021")
+ela = Assignment.create(assignment_name: "Book Report: 'To Kill A Mockingbird'", due_date: "11/26/2021")
 
 puts 'Creating Students...'
 ari = Student.create(name: "Ari Nolan", average_grade: 86.8)
