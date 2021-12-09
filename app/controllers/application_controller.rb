@@ -11,4 +11,14 @@ class ApplicationController < Sinatra::Base
     grades.to_json
   end
 
+  get "/assignments" do
+    assignments = Assignment.all
+    assignments.to_json
+  end
+
+  get "/students" do
+    students = Student.all
+    students.to_json
+  end
+
 end
