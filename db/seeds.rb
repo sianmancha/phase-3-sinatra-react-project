@@ -13,11 +13,11 @@ history = Assignment.create(assignment_name: "French Revolution", due_date: "10/
 ela = Assignment.create(assignment_name: "Book Report: 'To Kill A Mockingbird'", due_date: "11/26/2021")
 
 puts 'Creating Students...'
-ari = Student.create(student_name: "Ari Nolan", average_grade: 86.8)
-daniel = Student.create(student_name: "Daniel Neethling", average_grade: 81.6)
-kyle = Student.create(student_name: "Kyle Collins", average_grade: 86.8)
-rob = Student.create(student_name: "Rob Jones", average_grade: 91.6) 
-brooke = Student.create(student_name: "Brooke Barnes", average_grade: 88.2)
+ari = Student.create(name: "Ari Nolan", average_grade: 86.8)
+daniel = Student.create(name: "Daniel Neethling", average_grade: 81.6)
+kyle = Student.create(name: "Kyle Collins", average_grade: 86.8)
+rob = Student.create(name: "Rob Jones", average_grade: 91.6) 
+brooke = Student.create(name: "Brooke Barnes", average_grade: 88.2)
 
 puts 'Creating Grades...'
 Grade.create(date: "11/15/2021", score: 90, assignment_id: math.id, student_id: ari.id)

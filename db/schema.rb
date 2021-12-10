@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2021_12_08_231414) do
   end
 
   create_table "students", force: :cascade do |t|
-    t.string "student_name"
+    t.string "name"
     t.integer "average_grade"
   end
 
